@@ -51,6 +51,7 @@ class ViewController3: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("view3 即將出現")
+        print("view3 即將出現")
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -68,6 +69,7 @@ class ViewController3: UIViewController {
     //反初始化函式 在類別被釋放前的最後一刻會被呼叫
     deinit
     {
+        print("view2被釋放!")
         print("view2被釋放!")
     }
     
