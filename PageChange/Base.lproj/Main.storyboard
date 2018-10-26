@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DSc-0N-xNd">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="BYZ-38-t0r" customClass="ViewController" customModule="PageChange" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Nk-yx-Eau">
+                                <rect key="frame" x="93" y="163" width="228" height="30"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="下一頁(無程式換頁)"/>
+                                <connections>
+                                    <segue destination="iNl-eY-hwn" kind="show" identifier="gotoSecondVc" id="asA-Kg-vNm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhu-pd-rNn">
+                                <rect key="frame" x="93" y="201" width="228" height="30"/>
+                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="下一頁"/>
+                                <connections>
+                                    <action selector="nextToBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zyO-1M-jP1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="i am Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ks-49-DuY">
+                                <rect key="frame" x="16" y="108" width="131" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQ9-ri-4QV">
+                                <rect key="frame" x="151" y="554" width="113" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIY-GQ-7bi">
+                                <rect key="frame" x="197" y="114" width="124" height="30"/>
+                                <state key="normal" title="Btn"/>
+                                <connections>
+                                    <action selector="touchBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sHZ-3G-yBd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcW-qB-0z4">
+                                <rect key="frame" x="278" y="88" width="116" height="22"/>
+                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="tYi-8D-Z9L" kind="show" identifier="gotoInfoVC" id="B2Z-PH-c3Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BQ9-ri-4QV" secondAttribute="trailing" constant="150" id="0YM-jb-zIt"/>
+                            <constraint firstItem="0ks-49-DuY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2GW-w3-ukk"/>
+                            <constraint firstItem="jcW-qB-0z4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="278" id="3p8-1v-9Qn"/>
+                            <constraint firstItem="1Nk-yx-Eau" firstAttribute="top" secondItem="0ks-49-DuY" secondAttribute="bottom" constant="19" id="4iL-52-JfC"/>
+                            <constraint firstItem="Nhu-pd-rNn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="5dS-tg-RTd"/>
+                            <constraint firstItem="BQ9-ri-4QV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="151" id="628-Gx-IOV"/>
+                            <constraint firstItem="0ks-49-DuY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="8b5-7b-8Cs"/>
+                            <constraint firstItem="1Nk-yx-Eau" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="EI8-9N-Dr0">
+                                <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                            </constraint>
+                            <constraint firstItem="iIY-GQ-7bi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="RJj-kh-8cG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nhu-pd-rNn" secondAttribute="trailing" constant="93" id="Wkq-6v-JZe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Nk-yx-Eau" secondAttribute="trailing" constant="93" id="fmz-iZ-GG1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jcW-qB-0z4" secondAttribute="trailing" constant="20" id="gMl-ht-A8B"/>
+                            <constraint firstItem="Nhu-pd-rNn" firstAttribute="top" secondItem="1Nk-yx-Eau" secondAttribute="bottom" constant="8" id="hWQ-IX-qkk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iIY-GQ-7bi" secondAttribute="trailing" constant="93" id="la5-Od-96m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BQ9-ri-4QV" secondAttribute="bottom" constant="260" id="sx4-DZ-l5G"/>
+                            <constraint firstItem="iIY-GQ-7bi" firstAttribute="leading" secondItem="0ks-49-DuY" secondAttribute="trailing" constant="50" id="tdF-zG-d2M"/>
+                            <constraint firstItem="jcW-qB-0z4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="usa-vC-FIn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="6cE-Vw-ns7" appends="YES" id="6YS-aQ-4f7"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dvg-0F-nbd"/>
+                    <connections>
+                        <outlet property="labelChange" destination="0ks-49-DuY" id="nmD-kZ-sng"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="6cE-Vw-ns7">
+                    <connections>
+                        <action selector="swipeToVC:" destination="BYZ-38-t0r" id="Ex0-Nr-NB8"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1872.4637681159422" y="26.116071428571427"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="7zg-mr-vyS">
+            <objects>
+                <viewController id="tYi-8D-Z9L" customClass="InfoViewController" customModule="PageChange" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AAH-qR-RiZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRh-Ai-i1U">
+                                <rect key="frame" x="16" y="88" width="140" height="30"/>
+                                <state key="normal" title="回主頁"/>
+                                <connections>
+                                    <action selector="infoBackBtn:" destination="tYi-8D-Z9L" eventType="touchUpInside" id="VWZ-OY-jgE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gRh-Ai-i1U" firstAttribute="leading" secondItem="Cd0-rG-fJE" secondAttribute="leading" constant="16" id="DE9-xc-BaL"/>
+                            <constraint firstItem="gRh-Ai-i1U" firstAttribute="top" secondItem="Cd0-rG-fJE" secondAttribute="top" id="OEy-zD-D32"/>
+                            <constraint firstItem="Cd0-rG-fJE" firstAttribute="trailing" secondItem="gRh-Ai-i1U" secondAttribute="trailing" constant="258" id="ld0-c3-MgD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cd0-rG-fJE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="txT-cG-43c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1872" y="755"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="jpi-SW-pgq">
+            <objects>
+                <viewController storyboardIdentifier="ViewController2" modalTransitionStyle="flipHorizontal" id="iNl-eY-hwn" customClass="ViewController2" customModule="PageChange" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aJe-eB-15z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上一頁傳的文字是" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHo-q3-1Ym">
+                                <rect key="frame" x="20" y="168" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wve-5m-RqZ">
+                                <rect key="frame" x="20" y="88" width="122" height="30"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <action selector="backBtn:" destination="iNl-eY-hwn" eventType="touchUpInside" id="N8D-MO-Ra8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDE-vD-coh">
+                                <rect key="frame" x="352" y="88" width="46" height="30"/>
+                                <state key="normal" title="下一頁"/>
+                                <connections>
+                                    <segue destination="6Ss-qv-19P" kind="show" identifier="gotoThirdVC" id="P0A-EW-NKc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ko5-MU-vpT">
+                                <rect key="frame" x="148" y="554" width="118" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="wve-5m-RqZ" firstAttribute="top" secondItem="HUc-i0-h2p" secondAttribute="top" id="9Wh-ie-4eT"/>
+                            <constraint firstItem="wve-5m-RqZ" firstAttribute="leading" secondItem="aJe-eB-15z" secondAttribute="leadingMargin" id="ExV-sn-6DF"/>
+                            <constraint firstItem="HUc-i0-h2p" firstAttribute="trailing" secondItem="Ko5-MU-vpT" secondAttribute="trailing" constant="148" id="O6x-S9-iQ5"/>
+                            <constraint firstItem="nDE-vD-coh" firstAttribute="top" secondItem="HUc-i0-h2p" secondAttribute="top" id="PFK-6m-2i9"/>
+                            <constraint firstItem="HUc-i0-h2p" firstAttribute="trailing" secondItem="nDE-vD-coh" secondAttribute="trailing" constant="16" id="RD5-zv-AbQ"/>
+                            <constraint firstItem="BHo-q3-1Ym" firstAttribute="trailing" secondItem="aJe-eB-15z" secondAttribute="trailingMargin" id="WFs-nA-mbs"/>
+                            <constraint firstItem="BHo-q3-1Ym" firstAttribute="top" secondItem="wve-5m-RqZ" secondAttribute="bottom" constant="50" id="XP0-Pb-6ga"/>
+                            <constraint firstItem="nDE-vD-coh" firstAttribute="leading" secondItem="wve-5m-RqZ" secondAttribute="trailing" constant="210" id="eBK-Mr-4C5"/>
+                            <constraint firstItem="Ko5-MU-vpT" firstAttribute="leading" secondItem="HUc-i0-h2p" secondAttribute="leading" constant="148" id="gXy-Ia-Tkh"/>
+                            <constraint firstItem="HUc-i0-h2p" firstAttribute="trailing" secondItem="wve-5m-RqZ" secondAttribute="trailing" constant="272" id="kV3-0W-7v8"/>
+                            <constraint firstItem="wve-5m-RqZ" firstAttribute="leading" secondItem="BHo-q3-1Ym" secondAttribute="leading" id="lm6-8m-T9w"/>
+                            <constraint firstItem="HUc-i0-h2p" firstAttribute="bottom" secondItem="Ko5-MU-vpT" secondAttribute="bottom" constant="260" id="tVp-b9-9Af"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HUc-i0-h2p"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="KZo-QV-FEw" appends="YES" id="vJR-P8-kbM"/>
+                            <outletCollection property="gestureRecognizers" destination="gRM-tB-Fae" appends="YES" id="DwW-bb-YeM"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="vclabel2" destination="BHo-q3-1Ym" id="rfX-86-Bge"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0RD-zG-bBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="KZo-QV-FEw">
+                    <connections>
+                        <action selector="swipeNextBtn:" destination="iNl-eY-hwn" id="wkE-W5-QSt"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="gRM-tB-Fae">
+                    <connections>
+                        <action selector="swipeLeft:" destination="iNl-eY-hwn" id="qLK-dC-CxU"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2697.1014492753625" y="26.116071428571427"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="haI-5h-g7Z">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="6Ss-qv-19P" customClass="ViewController3" customModule="PageChange" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tqh-MI-Jps">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3c-l8-fbh">
+                                <rect key="frame" x="132" y="170" width="156" height="30"/>
+                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="回上一頁"/>
+                                <connections>
+                                    <action selector="backBtn:" destination="6Ss-qv-19P" eventType="touchUpInside" id="0yq-Jx-USQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUS-Yo-3tD">
+                                <rect key="frame" x="148" y="554" width="118" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGM-CT-Y52">
+                                <rect key="frame" x="132" y="245" width="156" height="30"/>
+                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="回主頁"/>
+                                <connections>
+                                    <action selector="BtnMain:" destination="6Ss-qv-19P" eventType="touchUpInside" id="XF4-pm-z3R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="oGM-CT-Y52" firstAttribute="top" secondItem="r3c-l8-fbh" secondAttribute="bottom" constant="45" id="LLq-Pn-Vof"/>
+                            <constraint firstItem="bUS-Yo-3tD" firstAttribute="leading" secondItem="WHj-zF-sO7" secondAttribute="leading" constant="148" id="LOJ-bc-Ufv"/>
+                            <constraint firstItem="WHj-zF-sO7" firstAttribute="bottom" secondItem="bUS-Yo-3tD" secondAttribute="bottom" constant="260" id="MO0-Ao-b4l"/>
+                            <constraint firstItem="r3c-l8-fbh" firstAttribute="top" secondItem="WHj-zF-sO7" secondAttribute="top" constant="82" id="R4B-XU-DMY"/>
+                            <constraint firstItem="WHj-zF-sO7" firstAttribute="trailing" secondItem="oGM-CT-Y52" secondAttribute="trailing" constant="126" id="YQX-jy-adq"/>
+                            <constraint firstItem="WHj-zF-sO7" firstAttribute="trailing" secondItem="bUS-Yo-3tD" secondAttribute="trailing" constant="148" id="au1-yw-YWS"/>
+                            <constraint firstItem="r3c-l8-fbh" firstAttribute="leading" secondItem="WHj-zF-sO7" secondAttribute="leading" constant="132" id="cjo-vF-gOG"/>
+                            <constraint firstItem="oGM-CT-Y52" firstAttribute="leading" secondItem="WHj-zF-sO7" secondAttribute="leading" constant="132" id="enY-TS-dDz"/>
+                            <constraint firstItem="WHj-zF-sO7" firstAttribute="trailing" secondItem="r3c-l8-fbh" secondAttribute="trailing" constant="126" id="pCm-mU-Ubh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WHj-zF-sO7"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="nbG-JO-Prh" appends="YES" id="I1E-bs-efD"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nmx-C8-WPx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="nbG-JO-Prh">
+                    <connections>
+                        <action selector="swipeRight:" destination="6Ss-qv-19P" id="sr4-y7-6Rz"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3484.057971014493" y="23.4375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="reT-ON-1W3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DSc-0N-xNd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bO4-uT-wzT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mEJ-fQ-rXZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jHq-Gs-e4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962.31884057971024" y="26.116071428571427"/>
+        </scene>
+    </scenes>
+</document>
