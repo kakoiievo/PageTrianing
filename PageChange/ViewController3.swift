@@ -56,6 +56,7 @@ class ViewController3: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         print("view3 已經完成介面佈置")
+        print("view3 已經完成介面佈置")
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
